@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>formulario_de_solicitud</title>
+</head>
+<body>
+    <header>
+        <!-- Logo de la marca-->
+         <div class="logo">
+            <a href="index.html">
+                <img src="../assets/logo.png" alt="Logo">
+            </a>
+         </div>
+        <!-- Menú-->
+            <nav>
+                <ul>
+                    <a href="categoria.html">
+                        <li>
+                            <h1>Anteojos de Sol</h1>
+                        </li>
+                    </a>
+                    <a href="categoria2.html">
+                        <li>
+                            <h1>Anteojos Recetados</h1>
+                        </li>
+                    </a>
+                    <a href="formulario.html">
+                        <li>
+                            <h1>Lentes de contacto</h1>
+                        </li>
+                    </a>
+                </ul>
+            </nav> 
+    </header>
+    <main>
+        <h2>Formulario de solicitud - Anteojos Recetados / Lentes de contacto</h2>
+        <!--Datos generales-->
+        <ul class="datos-personales">
+            <h2>Datos personales</h2>
+                <li>
+                    <label for="solicitud">Nombre y Apellido paciente:</label>
+                    <input type="text" id="name" name="name" placeholder="Ingresa Nombre y Apellido">
+                </li>
+                <li>
+                    <p>Ingrese mail al que se le enviarán los datos para completar la transacción.
+                    <label for="solicitud">Mail:</label>
+                    <input type="mail" id="mail" name="mail" placeholder="Ingresa mail">
+                    </p>
+                </li>
+            </ul>
+            <ul class="datos-receta">
+                <h2>Datos de la receta</h2>
+                    <li>
+                        <label for="solicitud" >Solicitud:</label>
+                            <select id="solicitud" name="solicitud">
+                                <option value="opcion1">Anteojos Recetados</option>
+                                <option value="opcion2">Lentes de contacto</option>
+                            </select>
+                    </li>
+                    <li>
+                        <label for="PD">Distancia (PD):</label>
+                        <input type="text" id="PD" name="PD" placeholder="Ingresa valor">
+                    </li>
+                        <!--Datos particulares OJO IZQ-->
+                        <h3>Ojo Izquierdo</h3>
+                            <p>*Agregar antes de completar el signo + o - según corresponda</p>
+                        <ol class="datos-receta">
+                            <li>
+                                <label for="PD">Esfera (SPH):</label>
+                                <input type="text" id="SPH" name="SPH" placeholder="Ingresa valor">    
+                            </li>
+                            <li>
+                                <label for="PD">Cilindro (SYL):</label>
+                                <input type="text" id="SYL" name="SYL" placeholder="Ingresa valor">
+                            </li>
+                            <li>
+                                <label for="PD">Eje (A):</label>
+                                <input type="text" id="A" name="A" placeholder="Ingresa valor">
+                            </li>
+                            <li>
+                                <label for="PD">Adición (ADD):</label>  
+                                <input type="text" id="ADD" name="ADD" placeholder="Ingresa valor">
+                            </li>
+                        </ol>
+                    <!--Datos particulares OJO IZQ-->
+                        <h3>Ojo Derecho</h3>
+                            <p>*Agregar antes de completar el signo + o - según corresponda</p>
+                        <ol>
+                            <li>
+                                <label for="PD">Esfera (SPH):</label>
+                                <input type="text" id="SPH" name="SPH" placeholder="Ingresa valor">    
+                            </li>
+                            <li>
+                                <label for="PD">Cilindro (SYL):</label>
+                                <input type="text" id="SYL" name="SYL" placeholder="Ingresa valor">
+                            </li>
+                            <li>
+                                <label for="PD">Eje (A):</label>
+                                <input type="text" id="A" name="A" placeholder="Ingresa valor">
+                            </li>
+                            <li>
+                                <label for="PD">Adición (ADD):</label>  
+                                <input type="text" id="ADD" name="ADD" placeholder="Ingresa valor">
+                            </li>
+                        </ol>
+                        <!--Botón para envíar formulario-->
+                        <a href="confirmacion.html">
+                            <button>Enviar</button>
+                        </a>
+                </ul>
+    </main>
+    <footer>
+        <!-- Titulo 1-->
+            <li>
+                <h3>Sobre nosotros</h3>
+                    <p>Somos una óptica online de anteojos y lentes de contacto con precios competitivos, calidad asegurada y envíos gratis a todo el país.</p>
+            </li>    
+            <!-- Titulo 2-->
+            <li>
+                <h3>Contactanos</h3>
+                    <ul>
+                        <li>
+                            <p>11222333444</p>
+                        </li>
+                        <li>
+                            <p>opticalacelli@gmail.com</p>
+                        </li>
+                        <li>
+                            <p>Perón 763, General Alvear Bs. As.</p>
+                        </li>
+                    </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,191 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+
+body{
+    background-color: #ffffff;
+
+    h1{      
+        font-size: 0.95rem; 
+    }
+    h2{
+        font-size: 0.9rem; 
+    }
+    h3{
+        font-size: 0.8rem; 
+    }
+    p{ 
+        font-size: 0.7rem;
+    } 
+
+/* Estilos mobile */
+
+header{
+    display: flex;
+    align-items: center; /* Centra el logo verticalmente */
+}
+
+.logo{
+    text-align: left;
+}
+
+header nav ul{
+    color: #004aad;
+    list-style: none; /* Eliminar viñetas */
+    display: flex; /* Alinear las categorías */
+    text-align-last: auto; /* Centra el texto verticalmente */
+    gap: 0.5rem;
+}
+
+
+.logo-confirmacion{
+    text-align: center;
+    }
+
+}
+
+main{
+    padding: 0.3rem;
+    
+    /* Clase para el banner */
+    .banner{
+        width: 100%;  /* Ocupar todo el ancho de la pantalla */
+        height: auto; /* Mantener la proporción de la imagen */
+    }
+
+    /* Clase para facilitadores */
+    .facilitadores {
+        justify-items: center;
+        }
+
+    .facilitadores ul{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 2rem;
+        list-style: none;
+        justify-content: center;
+        text-align: auto;
+    }
+
+    /* Clase para los botones comprar */
+    .boton-comprar{
+        background-color: #004aad;
+        color: #ffffff;
+}
+    /* Clase formulario de datos personales */
+    .datos-personales{
+        h2{
+            color: #004aad;
+        }
+        list-style: none; /* Eliminar viñetas */
+        width: 100%;  /* Ocupar todo el ancho de la pantalla */
+        gap: 80px; /* Espacio entre inputs */
+        text-align: left
+}
+    /* Clase formulario de datos de la receta */
+    .datos-receta{
+        h2{
+            color: #004aad;
+        }
+        h3{
+            color: #004aad;
+        }
+        list-style: none; /* Eliminar viñetas */
+        text-align: left
+    }
+}
+
+
+footer{
+    /* Estilos generales para el footer */
+    background-color: #ffffff;
+    list-style: none; /* Eliminar viñetas */
+    display: grid; /* Alinear las categorías */
+    grid-template-columns: repeat(2, 50%);
+    color: #ffffff;
+    text-align: left;
+    padding: 0.3rem;
+
+    div{
+        background-color: #004aad;
+        padding: 0.2rem;
+    }
+    li{
+        gap: 0.1rem;
+    }
+    h3{
+            color: #ffffff;
+            text-align: center;
+    }
+    p{ 
+        color: #ffffff;
+        margin-bottom: 0.1rem;
+    }
+}
+
+
+@media screen and (min-width: 600px){
+body {
+    h1{      
+        font-size: 1.5rem; 
+    }
+    h2{
+        font-size: 1.3rem; 
+
+    }
+    h3{
+        font-size: 1.2rem; 
+
+    }
+    p{
+        font-size: 1rem; 
+
+    }
+    header{
+        justify-content: center;
+    }
+    footer{
+        .nosotros{
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    body {
+        h1{      
+            font-size: 2rem; 
+        }
+        h2{
+            font-size: 1.6rem; 
+    
+        }
+        h3{
+            font-size: 1.4rem; 
+    
+        }
+        p{
+            font-size: 1.2rem; 
+    
+        }
+        header{
+            justify-content: center;
+        }
+        header nav ul{
+            gap: 1.2rem;
+        }
+        footer{
+            .nosotros{
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+}
