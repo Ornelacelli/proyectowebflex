@@ -12,7 +12,7 @@
     <header>
         <!-- Logo de la marca-->
          <div class="logo">
-            <a href="index.html">
+            <a href="../index.html">
                 <img src="../assets/logo.png" alt="Logo">
             </a>
          </div>
@@ -38,73 +38,73 @@
             </nav> 
     </header>
     <main>
-        <h2>Formulario de solicitud - Anteojos Recetados / Lentes de contacto</h2>
+        <h2 class="h2-formulario">Formulario de solicitud - Anteojos Recetados / Lentes de contacto</h2>
         <!--Datos generales-->
         <ul class="datos-personales">
-            <h2>Datos personales</h2>
+            <h3 class="h3-formulario">Datos personales</h3>
                 <li>
-                    <label for="solicitud">Nombre y Apellido paciente:</label>
+                    <label for="solicitud"><h4 class="h4-formulario">Nombre y Apellido paciente:</h4></label>
                     <input type="text" id="name" name="name" placeholder="Ingresa Nombre y Apellido">
                 </li>
                 <li>
-                    <p>Ingrese mail al que se le enviarán los datos para completar la transacción.
-                    <label for="solicitud">Mail:</label>
+                    <p class="p-formulario">Ingrese mail al que se le enviarán los datos para completar la transacción.
+                    <label for="solicitud"><h4 class="h4-formulario">Mail:</h4></label>
                     <input type="mail" id="mail" name="mail" placeholder="Ingresa mail">
                     </p>
                 </li>
             </ul>
             <ul class="datos-receta">
-                <h2>Datos de la receta</h2>
+                <h3 class="h3-formulario">Datos de la receta</h3>
                     <li>
-                        <label for="solicitud" >Solicitud:</label>
+                        <label for="solicitud" ><h4 class="h4-formulario">Solicitud:</h4></label>
                             <select id="solicitud" name="solicitud">
                                 <option value="opcion1">Anteojos Recetados</option>
                                 <option value="opcion2">Lentes de contacto</option>
                             </select>
                     </li>
                     <li>
-                        <label for="PD">Distancia (PD):</label>
+                        <label for="PD"><h4 class="h4-formulario">Distancia (PD):</h4></label>
                         <input type="text" id="PD" name="PD" placeholder="Ingresa valor">
                     </li>
                         <!--Datos particulares OJO IZQ-->
-                        <h3>Ojo Izquierdo</h3>
-                            <p>*Agregar antes de completar el signo + o - según corresponda</p>
+                        <h3 class="h3-formulario">Ojo Izquierdo</h3>
+                            <p class="p-formulario">*Agregar antes de completar el signo + o - según corresponda</p>
                         <ol class="datos-receta">
                             <li>
-                                <label for="PD">Esfera (SPH):</label>
+                                <label for="PD"><h4 class="h4-formulario">Esfera (SPH):</h4></label>
                                 <input type="text" id="SPH" name="SPH" placeholder="Ingresa valor">    
                             </li>
                             <li>
-                                <label for="PD">Cilindro (SYL):</label>
+                                <label for="PD"><h4 class="h4-formulario">Cilindro (SYL):</h4></label>
                                 <input type="text" id="SYL" name="SYL" placeholder="Ingresa valor">
                             </li>
                             <li>
-                                <label for="PD">Eje (A):</label>
+                                <label for="PD"><h4 class="h4-formulario">Eje (A):</h4></label>
                                 <input type="text" id="A" name="A" placeholder="Ingresa valor">
                             </li>
                             <li>
-                                <label for="PD">Adición (ADD):</label>  
+                                <label for="PD"><h4 class="h4-formulario">Adición (ADD):</h4></label>  
                                 <input type="text" id="ADD" name="ADD" placeholder="Ingresa valor">
                             </li>
                         </ol>
                     <!--Datos particulares OJO IZQ-->
-                        <h3>Ojo Derecho</h3>
-                            <p>*Agregar antes de completar el signo + o - según corresponda</p>
+                        <h3 class="h3-formulario">Ojo Derecho</h3>
+                            <p class="p-formulario">*Agregar antes de completar el signo + o - según corresponda</p>
                         <ol>
                             <li>
-                                <label for="PD">Esfera (SPH):</label>
+                                <label for="PD"><h4 class="h4-formulario">Esfera (SPH):</h4></label>
                                 <input type="text" id="SPH" name="SPH" placeholder="Ingresa valor">    
                             </li>
                             <li>
-                                <label for="PD">Cilindro (SYL):</label>
+                                <label for="PD"><h4 class="h4-formulario">Cilindro (SYL):</h4></label>
                                 <input type="text" id="SYL" name="SYL" placeholder="Ingresa valor">
                             </li>
                             <li>
-                                <label for="PD">Eje (A):</label>
+                                <label for="PD"><h4 class="h4-formulario">Eje (A):</h4></label>
                                 <input type="text" id="A" name="A" placeholder="Ingresa valor">
                             </li>
                             <li>
-                                <label for="PD">Adición (ADD):</label>  
+                                <label for="PD"><h4 class="h4-formulario">Adición (ADD):</h4></label>  
                                 <input type="text" id="ADD" name="ADD" placeholder="Ingresa valor">
                             </li>
                         </ol>
@@ -116,16 +116,16 @@
     </main>
     <footer>
         <!-- Titulo 1-->
-            <li>
+         <div>
                 <h3>Sobre nosotros</h3>
-                    <p>Somos una óptica online de anteojos y lentes de contacto con precios competitivos, calidad asegurada y envíos gratis a todo el país.</p>
-            </li>    
+                    <p class="nosotros">Somos una óptica online de anteojos y lentes de contacto con precios competitivos, calidad asegurada y envíos gratis a todo el país.</p>   
+        </div>
             <!-- Titulo 2-->
-            <li>
+            <div>
                 <h3>Contactanos</h3>
                     <ul>
                         <li>
-                            <p>11222333444</p>
+                            <p>Tel: 11222333444</p>
                         </li>
                         <li>
                             <p>opticalacelli@gmail.com</p>
@@ -134,6 +134,7 @@
                             <p>Perón 763, General Alvear Bs. As.</p>
                         </li>
                     </ul>
+             </div>
     </footer>
 </body>
 </html>

@@ -1,0 +1,27 @@
+ //mixin
+ @import "../abstracts/mixin";
+ //variables
+ @import "../abstracts/variables";
+ 
+ main {
+    margin-top: 30px;
+  }
+ .h1-confirmacion {
+    text-align: center;
+    font-size: $tam-h1+1.5rem;
+    color: $color-principal;
+  }
+
+.h2-confirmacion {
+    text-align: center;
+    font-size: $tam-h2+0.8rem;
+    color: $color-terciario;
+  }
+
+.p-confirmacion {
+    text-align: center;
+    font-size: $tam-p+0.5rem;
+    color: $color-terciario;
+  }
+
+  

@@ -1,0 +1,66 @@
+ //mixin
+@import "../abstracts/mixin";
+//variables
+@import "../abstracts/variables";
+ 
+ 
+ /* Main y formularios */
+  main {
+    margin-top: 30px;
+  }
+  
+  .h2-formulario {
+    text-align: center;
+    margin-bottom: 0.7rem;
+    font-size: $tam-h2+0.8rem;
+    color: $color-principal;
+  }
+  .h3-formulario {
+    margin-bottom: 0.7rem;
+    font-size: $tam-h3+0.5rem;
+    color: $color-principal;
+  }
+  .h4-formulario {
+    margin-bottom: 0.4rem;
+    font-size: $tam-h4;
+    color: $color-terciario;
+  }
+  .p-formulario {
+    text-align: left;
+    margin-bottom: 0.4rem;
+    font-size: $tam-p;
+    color: $color-terciario;
+  }
+  
+  ul.datos-personales, ul.datos-receta, ol {
+    list-style: none;
+    margin-bottom: 0.4rem;
+  }
+  
+  ul li, ol li {
+    margin-bottom: 0.4rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.7rem;
+    font-weight: bold;
+  }
+  
+  input, select {
+    padding: 0.6rem;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid $color-bordes;
+    border-radius: 0.2rem;
+    font-size: 0.6rem;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: $color-principal;
+    color: $color-secundario;
+    border: none;
+    border-radius: 4px;
+  }
+  

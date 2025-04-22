@@ -1,0 +1,131 @@
+//mixin
+@import "../abstracts/mixin";
+//variables
+@import "../abstracts/variables";
+
+header{
+     @include flex; /* coloca todo en una fila y lo centra */
+}
+
+.logo{
+    text-align: left; /* alineación del logo */
+}
+
+header nav ul{
+    color: $color-principal;
+    list-style: none; /* Eliminar viñetas */
+    display: flex; /* Alinear las categori­as */
+    text-align-last: auto; /* Centra el texto verticalmente */
+    gap: 0.5rem;
+}
+
+main{
+    padding: 0.3rem;
+    
+    /* Clase para el banner */
+    .banner{
+        width: 100%;  /* Ocupar todo el ancho de la pantalla */
+        height: auto; /* Mantener la proporcion de la imagen */
+    }
+
+    /* Clase para facilitadores */
+    .facilitadores {
+        justify-items: center;
+        }
+
+    .facilitadores ul{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 2rem;
+        list-style: none;
+        justify-content: center;
+        text-align: auto;
+        width: 90%;
+    }
+}
+
+footer{
+    /* Estilos generales para el footer */
+    background-color: $color-secundario;
+    list-style: none; /* Eliminar viÃ±etas */
+    display: grid; /* Alinear las categorÃ­as */
+    grid-template-columns: repeat(2, 50%);
+    color: $color-secundario;
+    text-align: left;
+    padding: 0.3rem;
+
+    div{
+        background-color: $color-principal;
+        padding: 0.2rem;
+    }
+    li{
+        gap: 0.1rem;
+    }
+    h3{
+            color: $color-secundario;
+            text-align: center;
+    }
+    p{ 
+        color: $color-secundario;
+        margin-bottom: 0.1rem;
+    }
+}
+
+@media screen and (min-width: 600px){
+    body {
+        h1{      
+            font-size: $tam-h1+0.55rem; 
+        }
+        h2{
+            font-size: $tam-h2+0.4rem; 
+    
+        }
+        h3{
+            font-size: $tam-h3+0.4rem; 
+    
+        }
+        p{
+            font-size: $tam-p+0.3rem; 
+    
+        }
+        header{
+            justify-content: center;
+        }
+        footer{
+            .nosotros{
+                text-align: center;
+            }
+        }
+    }
+}
+    
+    @media screen and (min-width: 1024px){
+        body {
+            h1{      
+                font-size: $tam-h1+1.05rem; 
+            }
+            h2{
+                font-size: $tam-h2+0.7rem; 
+        
+            }
+            h3{
+                font-size: $tam-h3+0.5rem; 
+        
+            }
+            p{
+                font-size: $tam-p+0.5rem; 
+        
+            }
+            header{
+                justify-content: center;
+            }
+            header nav ul{
+                gap: 1.2rem;
+            }
+            footer{
+                .nosotros{
+                    text-align: center;
+                }
+            }
+        }
+    }

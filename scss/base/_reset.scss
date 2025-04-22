@@ -1,0 +1,29 @@
+//import variables
+
+@import "../abstracts/variables";
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+
+body{
+    background-color: $color-secundario;
+
+    h1{      
+        font-size: $tam-h1; 
+    }
+    h2{
+        font-size: $tam-h2; 
+    }
+    h3{
+        font-size: $tam-h3; 
+    }
+    p{ 
+        font-size: $tam-p;
+    }
+} 

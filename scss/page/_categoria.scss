@@ -1,0 +1,26 @@
+//mixin
+@import "../abstracts/mixin";
+//variables
+@import "../abstracts/variables";
+
+header{
+     @include flex; /* coloca todo en una fila y lo centra */
+}
+
+.logo{
+    text-align: left; /* alineación del logo */
+}
+
+header nav ul{
+    color: $color-principal;
+    list-style: none; /* Eliminar viñetas */
+    display: flex; /* Alinear las categori­as */
+    text-align-last: auto; /* Centra el texto verticalmente */
+    gap: 0.5rem;
+}
+
+/* Clase para los botones comprar/solicitar */
+   .boton-comprar{
+    background-color:$color-principal;
+    color: $color-secundario;
+   }
