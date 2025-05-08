@@ -5,14 +5,17 @@
 
 header{
      @include flex; /* coloca todo en una fila y lo centra */
+     .h5{
+        color: $color-principal;
+     }
 }
 
 .logo{
     text-align: left; /* alineación del logo */
 }
 
-header nav ul{
-    color: $color-principal;
+header nav div div ul{
+    color: $color-principal !important;
     list-style: none; /* Eliminar viñetas */
     display: flex; /* Alinear las categori­as */
     text-align-last: auto; /* Centra el texto verticalmente */
@@ -90,6 +93,11 @@ footer{
         }
         header{
             justify-content: center;
+        }
+        .menu{
+            width: 100%;
+            justify-items: center;
+            text-align: center;
         }
         footer{
             .nosotros{
