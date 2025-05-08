@@ -65,6 +65,11 @@ main .facilitadores ul {
   text-align: auto;
   width: 90%;
 }
+main .facilitadores-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 
 footer {
   /* Estilos generales para el footer */

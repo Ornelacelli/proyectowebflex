@@ -45,6 +45,12 @@ main{
         text-align: auto;
         width: 90%;
     }
+
+    .facilitadores-item{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
 }
 
 footer{
