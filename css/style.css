@@ -203,15 +203,23 @@ header nav ul {
   gap: 0.5rem;
 }
 
+main h2 {
+  color: #1370ff;
+}
+
 /* Clase para los botones comprar/solicitar */
 .boton-comprar {
   background-color: #1370ff;
   color: #ffffff;
 }
 
+main {
+  margin: 1rem;
+}
+
 /* Main y formularios */
 main {
-  margin-top: 30px;
+  margin-top: 1rem;
 }
 
 .h2-formulario {
