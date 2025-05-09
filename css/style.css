@@ -83,6 +83,7 @@ footer {
   padding: 0.2rem;
   text-align: center;
   grid-template-columns: repeat(2, 50% 50%);
+  margin: 0.5rem;
 }
 footer div {
   background-color: #1370ff;
@@ -131,6 +132,7 @@ body {
 
 main {
   flex: 1; /* Permite que el contenido principal se expanda para llenar el espacio disponible */
+  margin: 0.5rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -211,10 +213,6 @@ main h2 {
 .boton-comprar {
   background-color: #1370ff;
   color: #ffffff;
-}
-
-main {
-  margin: 1rem;
 }
 
 /* Main y formularios */
