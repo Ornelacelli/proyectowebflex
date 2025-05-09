@@ -59,6 +59,7 @@ main .carousel-control-next-icon {
 }
 main .facilitadores {
   justify-items: center;
+  margin-top: 2rem;
 }
 main .facilitadores ul {
   display: grid;
@@ -85,6 +86,7 @@ footer {
 }
 footer div {
   background-color: #1370ff;
+  padding-top: 1rem;
 }
 footer h3 {
   color: #ffffff;
@@ -111,6 +113,26 @@ footer > div p {
   font-size: 0.9rem;
 }
 
+/* Mostrar solo el carousel mobile por defecto */
+#carouselMobile {
+  display: block;
+}
+
+#carouselDesktop {
+  display: none;
+}
+
+/* Establecer el body como un contenedor flex */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el cuerpo ocupe al menos toda la altura de la pantalla */
+}
+
+main {
+  flex: 1; /* Permite que el contenido principal se expanda para llenar el espacio disponible */
+}
+
 @media screen and (min-width: 600px) {
   body h1 {
     font-size: 1.5rem;
@@ -132,9 +154,9 @@ footer > div p {
     justify-items: center;
     text-align: center;
   }
-  body .menu .btn {
-    background-color: #1370ff;
-    border: none;
+  body .menu .dropdown .btn.btn-secondary {
+    background-color: #1370ff !important;
+    border: none !important;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -155,6 +177,12 @@ footer > div p {
   }
   body header nav ul {
     gap: 1.2rem;
+  }
+  body #carouselMobile {
+    display: none;
+  }
+  body #carouselDesktop {
+    display: block;
   }
 }
 header {

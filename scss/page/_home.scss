@@ -38,6 +38,7 @@ main{
     /* Clase para facilitadores */
     .facilitadores {
         justify-items: center;
+        margin-top: 2rem; // <-- agregá esta línea para separar del banner
         }
 
     .facilitadores ul{
@@ -67,6 +68,7 @@ footer {
     
     div {
         background-color: $color-principal;
+        padding-top: 1rem;
       }
     
       h3 {
@@ -98,6 +100,24 @@ footer {
       }
     }
 
+    /* Mostrar solo el carousel mobile por defecto */
+    #carouselMobile {
+    display: block;
+    }
+    #carouselDesktop {
+    display: none;
+    }
+
+    /* Establecer el body como un contenedor flex */
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;  /* Asegura que el cuerpo ocupe al menos toda la altura de la pantalla */
+    }
+
+    main {
+        flex: 1;  /* Permite que el contenido principal se expanda para llenar el espacio disponible */
+    }
 
 @media screen and (min-width: 600px){
     body {
@@ -124,11 +144,9 @@ footer {
             justify-items: center;
             text-align: center;
         }
-        .menu {
-            .btn {
-              background-color: $color-principal;
-              border: none;
-            }
+        .menu .dropdown .btn.btn-secondary {
+            background-color: $color-principal !important;
+            border: none !important;       
         }
     }
 }
@@ -156,5 +174,11 @@ footer {
             header nav ul{
                 gap: 1.2rem;
             }
+            #carouselMobile {
+                display: none;
+              }
+              #carouselDesktop {
+                display: block;
+              }
         }
     }
