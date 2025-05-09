@@ -53,6 +53,10 @@ main .banner {
   width: 100%; /* Ocupar todo el ancho de la pantalla */
   height: auto; /* Mantener la proporcion de la imagen */
 }
+main .carousel-control-prev-icon,
+main .carousel-control-next-icon {
+  filter: invert(49%) saturate(341%) brightness(93%) contrast(91%);
+}
 main .facilitadores {
   justify-items: center;
 }
@@ -76,9 +80,8 @@ footer {
   background-color: #ffffff;
   display: grid;
   padding: 0.2rem;
-  gap: 0.1rem;
   text-align: center;
-  grid-template-columns: repeat(3, 30% 35% 35%);
+  grid-template-columns: repeat(2, 50% 50%);
 }
 footer div {
   background-color: #1370ff;
@@ -116,7 +119,7 @@ footer > div p {
     font-size: 1.3rem;
   }
   body h3 {
-    font-size: 1rem;
+    font-size: 1.15rem;
   }
   body p {
     font-size: 0.85rem;
@@ -128,6 +131,10 @@ footer > div p {
     width: 100%;
     justify-items: center;
     text-align: center;
+  }
+  body .menu .btn {
+    background-color: #1370ff;
+    border: none;
   }
 }
 @media screen and (min-width: 1024px) {
