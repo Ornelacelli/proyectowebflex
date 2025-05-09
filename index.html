@@ -10,88 +10,168 @@
 </head>
 <body>
     <header>
+        <!-- Navbar desktop -->
+        <nav class="navbar navbar-expand-md navbar-light d-none d-md-flex">
+         <!-- Logo de la marca-->
+         <div class="logo">
+            <a href="index.html">
+                <img src="./assets/logo.png" alt="Logo">
+            </a>
+         </div>
+            <div class="container">
+            <div class="collapse navbar-collapse show">
+                <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./html/categoria.html">
+                    <h1 class="h5">Anteojos de Sol</h1>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./html/categoria2.html">
+                    <h1 class="h5">Anteojos Recetados</h1>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./html/formulario.html">
+                    <h1 class="h5">Lentes de contacto</h1>
+                    </a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <!-- Navbar mobile -->
+         <div class="menu d-lg-none d-md-none d-sm-flex container-fluid d-flex justify-content-between align-items-center">
         <!-- Logo de la marca-->
          <div class="logo">
             <a href="index.html">
                 <img src="./assets/logo.png" alt="Logo">
             </a>
          </div>
-        <!-- Menú-->
-            <nav>
-                <ul>
-                    <a href="./html/categoria.html">
-                        <li>
-                            <h1>Anteojos de Sol</h1>
-                        </li>
-                    </a>
-                    <a href="./html/categoria2.html">
-                        <li>
-                            <h1>Anteojos Recetados</h1>
-                        </li>
-                    </a>
-                    <a href="./html/formulario.html">
-                        <li>
-                            <h1>Lentes de contacto</h1>
-                        </li>
-                    </a>
-                </ul>
-            </nav> 
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Menú
+                <i class="bi bi-list"></i> <!-- Icono de hamburguesa -->
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./html/categoria.html">Anteojos de Sol</a></li>
+              <li><a class="dropdown-item" href="./html/categoria2.html">Anteojos Recetados</a></li>
+              <li><a class="dropdown-item" href="./html/formulario.html">Lentes de contacto</a></li>
+            </ul>
+          </div>
+        </div>
     </header>
     <main>
-        <!-- Banner principal -->
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./assets/1.png" class="banner" alt="Banner principal 1">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/2.png" class="banner" alt="Banner principal 2">
-              </div>
+        <!-- Banner desktop -->
+        <div id="carouselDesktop" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/1.png" class="banner" alt="Banner principal 1">
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-item">
+              <img src="./assets/2.png" class="banner" alt="Banner principal 2">
+            </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselDesktop" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselDesktop" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- Banner mobile -->
+        <div id="carouselMobile" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/banner mobile-1.png" class="banner" alt="Banner principal 1">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/banner mobile-2.png" class="banner" alt="Banner principal 2">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselMobile" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselMobile" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>        
         <!-- Facilitadores de información-->
         <div class="facilitadores">
             <ul>
                 <li>
+                    <div class="facilitadores-item">
+                    <img src="./assets/credito y debito.png" alt="cuotas">
                     <h2>Paga con crédito y débito</h2>
+                    </div>
                 </li>
                 <li>
+                    <div class="facilitadores-item">
+                    <img src="./assets/envíos.png" alt="envío">
                     <h2>Envíos a todo el país</h2>
+                    </div>
                 </li>
                 <li>
+                    <div class="facilitadores-item">
+                    <img src="./assets/cuotas.png" alt="pagos">
                     <h2>6 cuotas sin interés</h2>
+                    </div>
                 </li>
                 <li>
+                    <div class="facilitadores-item">
+                    <img src="./assets/whatsapp.png" alt="whatsapp">
                     <h2>Contactanos al 1122334455</h2>
+                    </div>
                 </li>
         </div>
     </main>
         <footer>
-            <!-- Titulo 1-->
-             <div>
-                    <h3>Sobre nosotros</h3>
-                        <p class="nosotros">Somos una óptica online de anteojos y lentes de contacto con precios competitivos, calidad asegurada y envíos gratis a todo el país.</p>   
-            </div>
-                <!-- Titulo 2-->
+                <!-- Titulo 1-->
                 <div>
                     <h3>Contactanos</h3>
                         <ul>
                             <li>
-                                <p>Tel: 11222333444</p>
+                                <p>Teléfono: +54911222333444</p>
                             </li>
                             <li>
                                 <p>opticalacelli@gmail.com</p>
                             </li>
                             <li>
                                 <p>Perón 763, General Alvear Bs. As.</p>
+                            </li>
+                        </ul>
+                 </div>
+                <!-- Titulo 2-->
+                <div>
+                    <h3>Nuestras redes</h3>
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/share/14krx46yaY/">
+                                <img src="./assets/Facebook.png" alt="facebook">
+                                </a>
+                                <a href="https://www.facebook.com/share/14krx46yaY/">
+                                    <p>Facebook</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/opticalacellialvear?igsh=ZG4xMTB6OXN1cjJv">
+                                <img src="./assets/Instagram.png" alt="Instagram">
+                                </a>
+                                <a href="https://www.instagram.com/opticalacellialvear?igsh=ZG4xMTB6OXN1cjJv">
+                                    <p>Instagram</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.tiktok.com/@ornellalacelli?_t=ZM-8wCURWw5JIb&_r=1">
+                                <img src="./assets/Tiktok.png" alt="Instagram">
+                                </a>
+                                <a href="https://www.tiktok.com/@ornellalacelli?_t=ZM-8wCURWw5JIb&_r=1">
+                                    <p>Tiktok</p>
+                                </a>
                             </li>
                         </ul>
                  </div>

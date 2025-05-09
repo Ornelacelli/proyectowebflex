@@ -10,32 +10,56 @@
 </head>
 <body>
     <header>
-        <!-- Logo de la marca-->
+        <!-- Navbar desktop -->
+        <nav class="navbar navbar-expand-md navbar-light d-none d-md-flex">
+         <!-- Logo de la marca-->
          <div class="logo">
             <a href="../index.html">
                 <img src="../assets/logo.png" alt="Logo">
             </a>
          </div>
-        <!-- Menú-->
-            <nav>
-                <ul>
-                    <a href="categoria.html">
-                        <li>
-                            <h1>Anteojos de Sol</h1>
-                        </li>
+            <div class="container">
+            <div class="collapse navbar-collapse show">
+                <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/categoria.html">
+                    <h1 class="h5">Anteojos de Sol</h1>
                     </a>
-                    <a href="categoria2.html">
-                        <li>
-                            <h1>Anteojos Recetados</h1>
-                        </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/categoria2.html">
+                    <h1 class="h5">Anteojos Recetados</h1>
                     </a>
-                    <a href="formulario.html">
-                        <li>
-                            <h1>Lentes de contacto</h1>
-                        </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/formulario.html">
+                    <h1 class="h5">Lentes de contacto</h1>
                     </a>
+                </li>
                 </ul>
-            </nav> 
+            </div>
+            </div>
+        </nav>
+        <!-- Navbar mobile -->
+         <div class="menu d-lg-none d-md-none d-sm-flex container-fluid d-flex justify-content-between align-items-center">
+        <!-- Logo de la marca-->
+         <div class="logo">
+            <a href="index.html">
+                <img src="../assets/logo.png" alt="Logo">
+            </a>
+         </div>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Menú
+                <i class="bi bi-list"></i> <!-- Icono de hamburguesa -->
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../html/categoria.html">Anteojos de Sol</a></li>
+              <li><a class="dropdown-item" href="../html/categoria2.html">Anteojos Recetados</a></li>
+              <li><a class="dropdown-item" href="../html/formulario.html">Lentes de contacto</a></li>
+            </ul>
+          </div>
+        </div>
     </header>
     <main>
         <h2 class="h2-formulario">Formulario de solicitud - Anteojos Recetados / Lentes de contacto</h2>
@@ -116,25 +140,50 @@
     </main>
     <footer>
         <!-- Titulo 1-->
-         <div>
-                <h3>Sobre nosotros</h3>
-                    <p class="nosotros">Somos una óptica online de anteojos y lentes de contacto con precios competitivos, calidad asegurada y envíos gratis a todo el país.</p>   
-        </div>
+        <div>
+            <h3>Contactanos</h3>
+                <ul>
+                    <li>
+                        <p>Teléfono: +54911222333444</p>
+                    </li>
+                    <li>
+                        <p>opticalacelli@gmail.com</p>
+                    </li>
+                    <li>
+                        <p>Perón 763, General Alvear Bs. As.</p>
+                    </li>
+                </ul>
+         </div>
             <!-- Titulo 2-->
             <div>
-                <h3>Contactanos</h3>
+                <h3>Nuestras redes</h3>
                     <ul>
                         <li>
-                            <p>Tel: 11222333444</p>
+                            <a href="https://www.facebook.com/share/14krx46yaY/">
+                            <img src="../assets/Facebook.png" alt="facebook">
+                            </a>
+                            <a href="https://www.facebook.com/share/14krx46yaY/">
+                                <p>Facebook</p>
+                            </a>
                         </li>
                         <li>
-                            <p>opticalacelli@gmail.com</p>
+                            <a href="https://www.instagram.com/opticalacellialvear?igsh=ZG4xMTB6OXN1cjJv">
+                            <img src="../assets/Instagram.png" alt="Instagram">
+                            </a>
+                            <a href="https://www.instagram.com/opticalacellialvear?igsh=ZG4xMTB6OXN1cjJv">
+                                <p>Instagram</p>
+                            </a>
                         </li>
                         <li>
-                            <p>Perón 763, General Alvear Bs. As.</p>
+                            <a href="https://www.tiktok.com/@ornellalacelli?_t=ZM-8wCURWw5JIb&_r=1">
+                            <img src="../assets/Tiktok.png" alt="Instagram">
+                            </a>
+                            <a href="https://www.tiktok.com/@ornellalacelli?_t=ZM-8wCURWw5JIb&_r=1">
+                                <p>Tiktok</p>
+                            </a>
                         </li>
                     </ul>
              </div>
-    </footer>
+</footer>
 </body>
 </html>

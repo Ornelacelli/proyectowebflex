@@ -19,8 +19,15 @@ header nav ul{
     gap: 0.5rem;
 }
 
+main h2{
+    color: $color-principal;
+}
 /* Clase para los botones comprar/solicitar */
    .boton-comprar{
     background-color:$color-principal;
     color: $color-secundario;
    }
+   
+
+
+

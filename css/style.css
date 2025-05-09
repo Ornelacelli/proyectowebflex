@@ -28,13 +28,16 @@ header {
   align-items: center;
   /* coloca todo en una fila y lo centra */
 }
+header .h5 {
+  color: #1370ff;
+}
 
 .logo {
   text-align: left; /* alineación del logo */
 }
 
-header nav ul {
-  color: #004aad;
+header nav div div ul {
+  color: #1370ff !important;
   list-style: none; /* Eliminar viñetas */
   display: flex; /* Alinear las categori­as */
   text-align-last: auto; /* Centra el texto verticalmente */
@@ -50,8 +53,13 @@ main .banner {
   width: 100%; /* Ocupar todo el ancho de la pantalla */
   height: auto; /* Mantener la proporcion de la imagen */
 }
+main .carousel-control-prev-icon,
+main .carousel-control-next-icon {
+  filter: invert(49%) saturate(341%) brightness(93%) contrast(91%);
+}
 main .facilitadores {
   justify-items: center;
+  margin-top: 2rem;
 }
 main .facilitadores ul {
   display: grid;
@@ -62,31 +70,69 @@ main .facilitadores ul {
   text-align: auto;
   width: 90%;
 }
+main .facilitadores-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 
 footer {
   /* Estilos generales para el footer */
   background-color: #ffffff;
-  list-style: none; /* Eliminar viÃ±etas */
-  display: grid; /* Alinear las categorÃ­as */
-  grid-template-columns: repeat(2, 50%);
-  color: #ffffff;
-  text-align: left;
-  padding: 0.3rem;
+  display: grid;
+  padding: 0.2rem;
+  text-align: center;
+  grid-template-columns: repeat(2, 50% 50%);
+  margin: 0.5rem;
 }
 footer div {
-  background-color: #004aad;
-  padding: 0.2rem;
-}
-footer li {
-  gap: 0.1rem;
+  background-color: #1370ff;
+  padding-top: 1rem;
 }
 footer h3 {
   color: #ffffff;
-  text-align: center;
 }
-footer p {
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0.3rem 0;
+}
+footer ul li p {
+  margin: 0;
   color: #ffffff;
-  margin-bottom: 0.1rem;
+  font-size: 0.9rem;
+}
+footer > div p {
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+/* Mostrar solo el carousel mobile por defecto */
+#carouselMobile {
+  display: block;
+}
+
+#carouselDesktop {
+  display: none;
+}
+
+/* Establecer el body como un contenedor flex */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el cuerpo ocupe al menos toda la altura de la pantalla */
+}
+
+main {
+  flex: 1; /* Permite que el contenido principal se expanda para llenar el espacio disponible */
+  margin: 0.5rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -97,16 +143,22 @@ footer p {
     font-size: 1.3rem;
   }
   body h3 {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
   }
   body p {
-    font-size: 1rem;
+    font-size: 0.85rem;
   }
   body header {
     justify-content: center;
   }
-  body footer .nosotros {
+  body .menu {
+    width: 100%;
+    justify-items: center;
     text-align: center;
+  }
+  body .menu .dropdown .btn.btn-secondary {
+    background-color: #1370ff !important;
+    border: none !important;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -120,7 +172,7 @@ footer p {
     font-size: 1.3rem;
   }
   body p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   body header {
     justify-content: center;
@@ -128,8 +180,11 @@ footer p {
   body header nav ul {
     gap: 1.2rem;
   }
-  body footer .nosotros {
-    text-align: center;
+  body #carouselMobile {
+    display: none;
+  }
+  body #carouselDesktop {
+    display: block;
   }
 }
 header {
@@ -143,35 +198,39 @@ header {
 }
 
 header nav ul {
-  color: #004aad;
+  color: #1370ff;
   list-style: none; /* Eliminar viñetas */
   display: flex; /* Alinear las categori­as */
   text-align-last: auto; /* Centra el texto verticalmente */
   gap: 0.5rem;
 }
 
+main h2 {
+  color: #1370ff;
+}
+
 /* Clase para los botones comprar/solicitar */
 .boton-comprar {
-  background-color: #004aad;
+  background-color: #1370ff;
   color: #ffffff;
 }
 
 /* Main y formularios */
 main {
-  margin-top: 30px;
+  margin-top: 1rem;
 }
 
 .h2-formulario {
   text-align: center;
   margin-bottom: 0.7rem;
-  font-size: 1.7rem;
-  color: #004aad;
+  font-size: 1.4rem;
+  color: #1370ff;
 }
 
 .h3-formulario {
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.45rem;
   font-size: 1.3rem;
-  color: #004aad;
+  color: #1370ff;
 }
 
 .h4-formulario {
@@ -213,7 +272,7 @@ input, select {
 
 button {
   padding: 10px 20px;
-  background-color: #004aad;
+  background-color: #1370ff;
   color: #ffffff;
   border: none;
   border-radius: 4px;
@@ -226,7 +285,7 @@ main {
 .h1-confirmacion {
   text-align: center;
   font-size: 2.45rem;
-  color: #004aad;
+  color: #1370ff;
 }
 
 .h2-confirmacion {
